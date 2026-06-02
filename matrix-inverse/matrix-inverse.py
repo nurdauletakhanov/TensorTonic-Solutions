@@ -11,4 +11,4 @@ def matrix_inverse(A):
         return None
     if np.linalg.det(A) == 0:
         return None
-    return np.linalg.inv(A)
+    return np.linalg.solve(A, np.identity(A.shape[0]))
